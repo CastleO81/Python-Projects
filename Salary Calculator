@@ -1,0 +1,15 @@
+hrs = input("Enter Hours:")
+rte = input("Enter rate per hour:")
+h = float(hrs)
+r = float(rte)
+yourpay= h*r
+if h <= 40 :
+    pays = yourpay
+    print(pays)
+elif h > 40 :
+    hoursdiff = (h-40)
+    OTpayrates= r*1.5
+    OTpaycalc= hoursdiff*OTpayrates
+    hrsadj=(h-hoursdiff)*r
+    finalOTpay= hrsadj+OTpaycalc
+    print(finalOTpay)
